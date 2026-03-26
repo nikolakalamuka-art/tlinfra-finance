@@ -7,132 +7,133 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',Calibri,sans-serif;background:#F0EDE8;color:#1E1E1E;min-height:100vh;overflow-x:hidden}
-.nav{position:fixed;top:0;left:0;right:0;z-index:500;height:54px;display:flex;align-items:center;padding:0 36px;background:rgba(26,26,26,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.07)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:500;height:46px;display:flex;align-items:center;padding:0 28px;background:rgba(26,26,26,0.98);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.07)}
 .nav-inner{width:100%;display:flex;align-items:center;justify-content:space-between}
-.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nav-logo{width:30px;height:30px;background:linear-gradient(135deg,#DB3501,#FF5300);border-radius:7px;display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;flex-shrink:0}
-.nav-name{font-size:14px;font-weight:600;color:#fff}
+.nav-brand{display:flex;align-items:center;gap:9px;text-decoration:none}
+.nav-logo{width:28px;height:28px;background:linear-gradient(135deg,#DB3501,#FF5300);border-radius:6px;display:grid;place-items:center;font-size:11px;font-weight:700;color:#fff;flex-shrink:0}
+.nav-name{font-size:13.5px;font-weight:600;color:#fff}
 .nav-name em{color:#FF5300;font-style:normal}
-.nav-sep{width:1px;height:18px;background:rgba(255,255,255,0.1);margin:0 16px}
+.nav-sep{width:1px;height:16px;background:rgba(255,255,255,0.1);margin:0 14px}
 .nav-links{display:flex;gap:2px}
-.nav-link{font-size:13px;font-weight:500;color:rgba(255,255,255,0.45);padding:5px 12px;border-radius:7px;text-decoration:none;transition:all .18s}
-.nav-link:hover{color:rgba(255,255,255,0.85);background:rgba(255,255,255,0.07)}
+.nav-link{font-size:12.5px;font-weight:500;color:rgba(255,255,255,0.42);padding:5px 11px;border-radius:6px;text-decoration:none;transition:all .15s}
+.nav-link:hover{color:rgba(255,255,255,0.82);background:rgba(255,255,255,0.07)}
 .nav-link.active{color:#fff;background:rgba(255,83,0,0.18);border:1px solid rgba(255,83,0,0.28)}
 .nav-right{display:flex;align-items:center;gap:8px}
-.nav-sp{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:500;color:rgba(255,255,255,0.45);border:1px solid rgba(255,255,255,0.1);padding:5px 13px;border-radius:7px;text-decoration:none;transition:all .18s}
+.nav-sp{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:500;color:rgba(255,255,255,0.42);border:1px solid rgba(255,255,255,0.1);padding:5px 12px;border-radius:6px;text-decoration:none;transition:all .15s}
 .nav-sp:hover{color:#FF5300;border-color:rgba(255,83,0,0.3)}
-.nav-sp svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
-.nav-av{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#3a1a05,#5a2a0a);border:1.5px solid rgba(255,83,0,0.28);display:grid;place-items:center;font-size:10px;font-weight:700;color:#FF5300}
-.hero{position:relative;overflow:hidden;background:#1E1E1E;padding:90px 60px 56px;min-height:360px;display:flex;align-items:flex-end;margin-top:54px}
-.hero-stripe{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#DB3501 0%,#FF5300 42%,#FDCD1F 85%,transparent 100%)}
-.hero-glow{position:absolute;right:-100px;top:-100px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(255,83,0,0.1) 0%,transparent 62%);pointer-events:none}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,83,0,0.032) 1px,transparent 1px),linear-gradient(90deg,rgba(255,83,0,0.032) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 90% 100% at 82% 0%,black 0%,transparent 65%);pointer-events:none}
-.hero-inner{position:relative;z-index:2;width:100%;display:flex;align-items:flex-end;justify-content:space-between;gap:48px}
-.hero-left{max-width:640px}
-.hero-eyebrow{display:flex;align-items:center;gap:8px;margin-bottom:18px}
-.e-dot{width:5px;height:5px;border-radius:50%;background:#FF5300;animation:epulse 2s ease-in-out infinite}
-@keyframes epulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.6)}}
-.e-path{font-size:10.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.28)}
+.nav-sp svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
+.nav-av{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#3a1a05,#5a2a0a);border:1.5px solid rgba(255,83,0,0.28);display:grid;place-items:center;font-size:9.5px;font-weight:700;color:#FF5300}
+.hero{position:relative;overflow:hidden;background:#1E1E1E;padding:76px 48px 48px;min-height:320px;display:flex;align-items:flex-end;margin-top:46px}
+.hero-stripe{position:absolute;top:0;left:0;right:0;height:3.5px;background:linear-gradient(90deg,#DB3501 0%,#FF5300 40%,#FDCD1F 82%,transparent 100%)}
+.hero-glow{position:absolute;right:-80px;top:-80px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(255,83,0,0.09) 0%,transparent 62%);pointer-events:none}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,83,0,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,83,0,0.035) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 85% 100% at 80% 0%,black 0%,transparent 65%);pointer-events:none}
+.hero-inner{position:relative;z-index:2;width:100%;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-left{max-width:600px}
+.hero-eyebrow{display:flex;align-items:center;gap:7px;margin-bottom:16px}
+.e-dot{width:5px;height:5px;border-radius:50%;background:#FF5300;animation:edot 2s ease-in-out infinite}
+@keyframes edot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.55)}}
+.e-path{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.26)}
 .e-path span{color:#FF5300}
-.hero-title{font-size:58px;font-weight:700;line-height:.96;letter-spacing:-2px;color:#fff;margin-bottom:16px}
-.hero-title .stroke{color:transparent;-webkit-text-stroke:1.5px rgba(255,83,0,.55);display:block}
-.hero-desc{font-size:14px;font-weight:300;color:rgba(255,255,255,.36);line-height:1.75;max-width:450px;margin-bottom:28px}
-.hero-pills{display:flex;flex-wrap:wrap;gap:7px}
-.hpill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:100px;font-size:11px;font-weight:500;border:1px solid}
-.hpill-dot{width:4px;height:4px;border-radius:50%;flex-shrink:0}
-.hp-o{background:rgba(255,83,0,.09);border-color:rgba(255,83,0,.22);color:rgba(255,130,50,.9)}.hp-o .hpill-dot{background:#FF5300}
-.hp-y{background:rgba(253,205,31,.07);border-color:rgba(253,205,31,.18);color:rgba(200,165,30,.85)}.hp-y .hpill-dot{background:#FDCD1F}
-.hp-g{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.09);color:rgba(255,255,255,.3)}.hp-g .hpill-dot{background:rgba(255,255,255,.25)}
-.hero-stats{display:flex;flex-direction:column;gap:10px;flex-shrink:0}
-.hst{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:16px 22px;text-align:right;min-width:148px;position:relative;overflow:hidden;transition:border-color .2s}
-.hst:hover{border-color:rgba(255,83,0,.18)}
-.hst::after{content:'';position:absolute;top:-10px;right:-10px;width:50px;height:50px;border-radius:50%;background:radial-gradient(circle,rgba(255,83,0,.1),transparent 70%)}
-.hst-val{font-size:34px;font-weight:700;color:#fff;line-height:1;letter-spacing:-1.5px}
-.hst-val.acc{color:rgba(255,130,50,.95)}
-.hst-lbl{font-size:9.5px;font-weight:500;color:rgba(255,255,255,.25);letter-spacing:1.8px;text-transform:uppercase;margin-top:5px}
-.content{padding:40px 60px 72px}
-.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
-.sec-lbl{font-size:9.5px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:rgba(255,83,0,.65);white-space:nowrap}
-.sec-rule{flex:1;height:1px;background:#E2DDD6}
-.sec-ct{font-size:11px;color:#B0AA9E}
-.qa-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:48px}
-.qa-card{background:#fff;border:1px solid #E2DDD6;border-radius:14px;padding:18px;display:flex;align-items:center;gap:13px;cursor:pointer;text-decoration:none;color:inherit;transition:all .22s;position:relative;overflow:hidden}
-.qa-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2.5px;background:linear-gradient(90deg,#FF5300,#FDCD1F);transform:scaleX(0);transform-origin:left;transition:transform .22s}
-.qa-card:hover{border-color:rgba(255,83,0,.28);transform:translateY(-2px);box-shadow:0 6px 22px rgba(255,83,0,.07)}
-.qa-card:hover::after{transform:scaleX(1)}
-.qa-ico{width:38px;height:38px;border-radius:10px;background:#FFF0E8;border:1px solid rgba(255,83,0,.12);display:grid;place-items:center;flex-shrink:0}
-.qa-ico svg{width:17px;height:17px;stroke:#FF5300;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.qa-ico.b{background:#EEF3FF;border-color:rgba(70,120,220,.12)}.qa-ico.b svg{stroke:#4A7CDC}
-.qa-ico.g{background:#EDFAF3;border-color:rgba(26,122,70,.12)}.qa-ico.g svg{stroke:#1A7A46}
-.qa-ico.a{background:#FEF5E4;border-color:rgba(200,130,30,.12)}.qa-ico.a svg{stroke:#B87020}
-.qa-ttl{font-size:13px;font-weight:600;letter-spacing:-.15px;margin-bottom:2px}
-.qa-sub{font-size:11px;color:#B0AA9E}
-.modules-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.mcard{background:#fff;border:1px solid #E2DDD6;border-radius:18px;padding:26px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:all .25s cubic-bezier(.22,1,.36,1)}
-.mcard-bar{position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px 0 0 3px;background:linear-gradient(180deg,#FF5300,rgba(255,83,0,0));opacity:0;transition:opacity .25s}
+.hero-title{font-size:52px;font-weight:700;line-height:.95;letter-spacing:-2px;color:#fff;margin-bottom:14px}
+.hero-title .solid-orange{color:#FF5300;display:block}
+.hero-desc{font-size:13.5px;font-weight:300;color:rgba(255,255,255,.34);line-height:1.75;max-width:430px;margin-bottom:22px}
+.hero-pills{display:flex;flex-wrap:wrap;gap:6px}
+.hpill{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:100px;font-size:10.5px;font-weight:500;border:1px solid}
+.hpd{width:4px;height:4px;border-radius:50%;flex-shrink:0}
+.hp-o{background:rgba(255,83,0,.08);border-color:rgba(255,83,0,.2);color:rgba(255,125,45,.9)}.hp-o .hpd{background:#FF5300}
+.hp-y{background:rgba(253,205,31,.06);border-color:rgba(253,205,31,.16);color:rgba(195,158,28,.85)}.hp-y .hpd{background:#FDCD1F}
+.hp-g{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.08);color:rgba(255,255,255,.28)}.hp-g .hpd{background:rgba(255,255,255,.22)}
+.hero-stats{display:flex;flex-direction:column;gap:9px;flex-shrink:0}
+.hstat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:14px 20px;text-align:right;min-width:138px;position:relative;overflow:hidden;transition:border-color .2s}
+.hstat:hover{border-color:rgba(255,83,0,.16)}
+.hstat::after{content:'';position:absolute;top:-8px;right:-8px;width:44px;height:44px;border-radius:50%;background:radial-gradient(circle,rgba(255,83,0,.09),transparent 70%)}
+.hstat-v{font-size:32px;font-weight:700;color:#fff;line-height:1;letter-spacing:-1.5px}
+.hstat-v.acc{color:rgba(255,125,45,.95)}
+.hstat-l{font-size:8.5px;font-weight:500;color:rgba(255,255,255,.22);letter-spacing:1.8px;text-transform:uppercase;margin-top:4px}
+.content{padding:32px 48px 64px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.sl{font-size:9px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:rgba(255,83,0,.62);white-space:nowrap}
+.sr{flex:1;height:1px;background:#E2DDD6}
+.sc{font-size:10.5px;color:#B0AA9E}
+.qa-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:40px}
+.qcard{background:#fff;border:1px solid #E2DDD6;border-radius:12px;padding:15px 16px;display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;cursor:pointer;transition:all .2s;position:relative;overflow:hidden}
+.qcard::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FF5300,#FDCD1F);transform:scaleX(0);transform-origin:left;transition:transform .2s}
+.qcard:hover{border-color:rgba(255,83,0,.26);transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,83,0,.07)}
+.qcard:hover::after{transform:scaleX(1)}
+.qico{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;flex-shrink:0}
+.qico svg{width:15px;height:15px;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.qico-o{background:#FFF0E8;border:1px solid rgba(255,83,0,.1)}.qico-o svg{stroke:#FF5300}
+.qico-b{background:#EEF3FF;border:1px solid rgba(74,124,220,.1)}.qico-b svg{stroke:#4A7CDC}
+.qico-g{background:#EDFAF3;border:1px solid rgba(26,122,70,.1)}.qico-g svg{stroke:#1A7A46}
+.qico-a{background:#FEF5E4;border:1px solid rgba(184,112,32,.1)}.qico-a svg{stroke:#B87020}
+.qt{font-size:12.5px;font-weight:600;letter-spacing:-.15px;margin-bottom:1px}
+.qs{font-size:10.5px;color:#B0AA9E}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mcard{background:#fff;border:1px solid #E2DDD6;border-radius:16px;padding:22px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:all .22s cubic-bezier(.22,1,.36,1)}
+.mcard-bar{position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px 0 0 3px;background:linear-gradient(180deg,#FF5300,rgba(255,83,0,0));opacity:0;transition:opacity .22s}
 .mcard.mc-b .mcard-bar{background:linear-gradient(180deg,#4A7CDC,rgba(74,124,220,0))}
 .mcard.mc-g .mcard-bar{background:linear-gradient(180deg,#1A7A46,rgba(26,122,70,0))}
 .mcard.mc-a .mcard-bar{background:linear-gradient(180deg,#B87020,rgba(184,112,32,0))}
-.mcard:hover{border-color:rgba(255,83,0,.25);transform:translateY(-4px);box-shadow:0 18px 48px rgba(0,0,0,.08)}
+.mcard:hover{border-color:rgba(255,83,0,.24);transform:translateY(-4px);box-shadow:0 16px 44px rgba(0,0,0,.08)}
 .mcard:hover .mcard-bar{opacity:1}
-.mcard.mc-b:hover{border-color:rgba(74,124,220,.25)}
-.mcard.mc-g:hover{border-color:rgba(26,122,70,.25)}
-.mcard.mc-a:hover{border-color:rgba(184,112,32,.25)}
-.mcard-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px}
-.mcard-ico{width:48px;height:48px;border-radius:13px;background:#FFF0E8;border:1px solid rgba(255,83,0,.1);display:grid;place-items:center;flex-shrink:0;transition:all .22s}
-.mcard-ico svg{width:22px;height:22px;stroke:#FF5300;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.mcard.mc-b .mcard-ico{background:#EEF3FF;border-color:rgba(74,124,220,.1)}.mcard.mc-b .mcard-ico svg{stroke:#4A7CDC}
-.mcard.mc-g .mcard-ico{background:#EDFAF3;border-color:rgba(26,122,70,.1)}.mcard.mc-g .mcard-ico svg{stroke:#1A7A46}
-.mcard.mc-a .mcard-ico{background:#FEF5E4;border-color:rgba(184,112,32,.1)}.mcard.mc-a .mcard-ico svg{stroke:#B87020}
-.mbadge{font-size:8.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid;flex-shrink:0}
-.mb-act{background:#EDFAF3;border-color:rgba(26,122,70,.2);color:#1A7A46}
+.mcard.mc-b:hover{border-color:rgba(74,124,220,.24)}
+.mcard.mc-g:hover{border-color:rgba(26,122,70,.24)}
+.mcard.mc-a:hover{border-color:rgba(184,112,32,.24)}
+.mcard-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px}
+.mico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;flex-shrink:0}
+.mico svg{width:20px;height:20px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.mico-o{background:#FFF0E8;border:1px solid rgba(255,83,0,.1)}.mico-o svg{stroke:#FF5300}
+.mico-b{background:#EEF3FF;border:1px solid rgba(74,124,220,.1)}.mico-b svg{stroke:#4A7CDC}
+.mico-g{background:#EDFAF3;border:1px solid rgba(26,122,70,.1)}.mico-g svg{stroke:#1A7A46}
+.mico-a{background:#FEF5E4;border:1px solid rgba(184,112,32,.1)}.mico-a svg{stroke:#B87020}
+.mbadge{font-size:8px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:3.5px 8px;border-radius:100px;border:1px solid;flex-shrink:0}
+.mb-ok{background:#EDFAF3;border-color:rgba(26,122,70,.2);color:#1A7A46}
 .mb-pnd{background:#FEF5E4;border-color:rgba(184,112,32,.22);color:#B87020}
-.mcard-title{font-size:16px;font-weight:700;letter-spacing:-.35px;color:#1E1E1E;margin-bottom:7px;line-height:1.25}
-.mcard-desc{font-size:12.5px;color:#7A756E;line-height:1.65;flex:1;margin-bottom:16px}
-.mcard-links{display:flex;flex-direction:column;gap:0;border:1px solid #EDE9E2;border-radius:11px;overflow:hidden;margin-bottom:16px}
-.mlink{display:flex;align-items:center;gap:10px;padding:11px 14px;text-decoration:none;color:#1E1E1E;font-size:12.5px;font-weight:500;border-bottom:1px solid #EDE9E2;transition:all .16s;cursor:pointer}
+.mcard-title{font-size:15px;font-weight:700;letter-spacing:-.3px;color:#1E1E1E;margin-bottom:6px;line-height:1.25}
+.mcard-desc{font-size:12px;color:#7A756E;line-height:1.65;flex:1;margin-bottom:14px}
+.mlinks{display:flex;flex-direction:column;border:1px solid #EDE9E2;border-radius:10px;overflow:hidden;margin-bottom:14px}
+.mlink{display:flex;align-items:center;gap:9px;padding:9px 12px;text-decoration:none;color:#1E1E1E;font-size:12px;font-weight:500;border-bottom:1px solid #EDE9E2;transition:all .14s}
 .mlink:last-child{border-bottom:none}
-.mlink:hover{background:#FFF8F5;color:#FF5300;padding-left:18px}
-.mlink-ico{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;flex-shrink:0}
-.mlink-ico svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.mlink-ico.o{background:#FFF0E8;color:#FF5300}
-.mlink-ico.b{background:#EEF3FF;color:#4A7CDC}
-.mlink-ico.g{background:#EDFAF3;color:#1A7A46}
-.mlink-ico.a{background:#FEF5E4;color:#B87020}
-.mlink-label{flex:1}
-.mlink-arrow{font-size:14px;color:#E2DDD6;transition:all .16s}
-.mlink:hover .mlink-arrow{color:#FF5300;transform:translateX(2px)}
-.mcard-footer{border-top:1px solid #F0EDE8;padding-top:13px;display:flex;align-items:center;justify-content:space-between}
-.mcard-meta{font-size:11px;color:#B0AA9E}
-.mcard-open{display:flex;align-items:center;gap:4px;font-size:11.5px;font-weight:600;color:#FF5300;cursor:pointer;transition:gap .18s}
-.mcard.mc-b .mcard-open{color:#4A7CDC}.mcard.mc-g .mcard-open{color:#1A7A46}.mcard.mc-a .mcard-open{color:#B87020}
-.mcard-open:hover{gap:8px}
-.mcard-open svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round}
-.modal-overlay{position:fixed;inset:0;z-index:900;background:rgba(20,16,10,.62);backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .28s}
-.modal-overlay.open{opacity:1;pointer-events:all}
-.modal-wrap{position:fixed;inset:0;z-index:901;display:flex;align-items:center;justify-content:center;padding:24px;pointer-events:none}
-.modal-box{width:100%;max-width:1220px;height:88vh;background:#fff;border:1px solid #E2DDD6;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;pointer-events:all;box-shadow:0 40px 100px rgba(0,0,0,.16);transform:scale(.96) translateY(16px);transition:transform .32s cubic-bezier(.22,1,.36,1)}
-.modal-overlay.open .modal-box{transform:scale(1) translateY(0)}
-.modal-bar{background:#1E1E1E;height:50px;padding:0 22px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;border-bottom:1px solid rgba(255,255,255,.06)}
-.modal-bar-l{display:flex;align-items:center;gap:10px}
-.modal-sp-ico{width:24px;height:24px;background:rgba(255,83,0,.12);border:1px solid rgba(255,83,0,.2);border-radius:6px;display:grid;place-items:center}
-.modal-sp-ico svg{width:13px;height:13px;stroke:#FF5300;fill:none;stroke-width:2;stroke-linecap:round}
-.modal-ttl{font-size:13px;font-weight:600;color:#fff;letter-spacing:-.2px}
-.modal-bar-r{display:flex;align-items:center;gap:8px}
-.modal-ext{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:500;color:rgba(255,255,255,.45);border:1px solid rgba(255,255,255,.1);padding:5px 12px;border-radius:7px;text-decoration:none;transition:all .18s}
-.modal-ext:hover{color:#FF5300;border-color:rgba(255,83,0,.3)}
-.modal-ext svg{width:10px;height:10px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round}
-.modal-cls{width:28px;height:28px;border-radius:7px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);font-size:16px;display:grid;place-items:center;cursor:pointer;transition:all .18s}
-.modal-cls:hover{background:rgba(219,53,1,.18);border-color:rgba(219,53,1,.3);color:#fff}
-.modal-loading{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#B0AA9E;font-size:13px}
-.modal-spinner{width:30px;height:30px;border:2.5px solid #E2DDD6;border-top-color:#FF5300;border-radius:50%;animation:spin .75s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.modal-iframe{flex:1;border:none;width:100%;display:none}
-.appear{opacity:0;transform:translateY(14px);animation:appear .55s ease forwards}
-@keyframes appear{to{opacity:1;transform:translateY(0)}}
-.d1{animation-delay:.08s}.d2{animation-delay:.16s}.d3{animation-delay:.24s}.d4{animation-delay:.34s}.d5{animation-delay:.44s}
-@media(max-width:1100px){.modules-grid{grid-template-columns:repeat(2,1fr)}.qa-row{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:720px){.hero{padding:80px 24px 44px}.hero-stats{display:none}.hero-title{font-size:42px}.content{padding:28px 24px 56px}.modules-grid,.qa-row{grid-template-columns:1fr}.nav{padding:0 20px}.nav-sep,.nav-links{display:none}}
+.mlink:hover{background:#FFF8F5;color:#FF5300;padding-left:16px}
+.mlico{width:22px;height:22px;border-radius:6px;display:grid;place-items:center;flex-shrink:0}
+.mlico svg{width:11px;height:11px;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.mlico-o{background:#FFF0E8}.mlico-o svg{stroke:#FF5300}
+.mlico-b{background:#EEF3FF}.mlico-b svg{stroke:#4A7CDC}
+.mlico-g{background:#EDFAF3}.mlico-g svg{stroke:#1A7A46}
+.mlico-a{background:#FEF5E4}.mlico-a svg{stroke:#B87020}
+.ml-lbl{flex:1}
+.ml-arr{font-size:13px;color:#D8D3CC;transition:all .14s}
+.mlink:hover .ml-arr{color:#FF5300;transform:translateX(2px)}
+.mcard-foot{border-top:1px solid #F0EDE8;padding-top:12px;display:flex;align-items:center;justify-content:space-between}
+.mcard-meta{font-size:10.5px;color:#B0AA9E}
+.mcard-cta{display:flex;align-items:center;gap:3px;font-size:11px;font-weight:600;color:#FF5300;cursor:pointer;text-decoration:none;transition:gap .16s}
+.mcard.mc-b .mcard-cta{color:#4A7CDC}.mcard.mc-g .mcard-cta{color:#1A7A46}.mcard.mc-a .mcard-cta{color:#B87020}
+.mcard-cta svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round}
+.moverlay{position:fixed;inset:0;z-index:900;background:rgba(18,12,6,.6);backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .26s}
+.moverlay.open{opacity:1;pointer-events:all}
+.mwrap{position:fixed;inset:0;z-index:901;display:flex;align-items:center;justify-content:center;padding:20px;pointer-events:none}
+.mbox{width:100%;max-width:1200px;height:88vh;background:#fff;border:1px solid #DDD8D0;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;pointer-events:all;box-shadow:0 36px 90px rgba(0,0,0,.15);transform:scale(.96) translateY(14px);transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.moverlay.open .mbox{transform:scale(1) translateY(0)}
+.mbar{background:#1E1E1E;height:48px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;border-bottom:1px solid rgba(255,255,255,.06)}
+.mbar-l{display:flex;align-items:center;gap:9px}
+.mbar-ico{width:22px;height:22px;background:rgba(255,83,0,.12);border:1px solid rgba(255,83,0,.2);border-radius:6px;display:grid;place-items:center}
+.mbar-ico svg{width:12px;height:12px;stroke:#FF5300;fill:none;stroke-width:2;stroke-linecap:round}
+.mbar-ttl{font-size:12.5px;font-weight:600;color:#fff;letter-spacing:-.15px}
+.mbar-r{display:flex;align-items:center;gap:7px}
+.mbar-ext{display:flex;align-items:center;gap:5px;font-size:11.5px;font-weight:500;color:rgba(255,255,255,.42);border:1px solid rgba(255,255,255,.1);padding:4px 11px;border-radius:6px;text-decoration:none;transition:all .15s}
+.mbar-ext:hover{color:#FF5300;border-color:rgba(255,83,0,.28)}
+.mbar-ext svg{width:10px;height:10px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round}
+.mbar-cls{width:26px;height:26px;border-radius:6px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.45);font-size:15px;display:grid;place-items:center;cursor:pointer;transition:all .15s}
+.mbar-cls:hover{background:rgba(219,53,1,.18);border-color:rgba(219,53,1,.28);color:#fff}
+.mld{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;color:#B0AA9E;font-size:12.5px}
+.mspn{width:28px;height:28px;border:2px solid #E2DDD6;border-top-color:#FF5300;border-radius:50%;animation:sp .7s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.mifr{flex:1;border:none;width:100%;display:none}
+.ap{opacity:0;transform:translateY(13px);animation:ap .5s ease forwards}
+@keyframes ap{to{opacity:1;transform:translateY(0)}}
+.d1{animation-delay:.07s}.d2{animation-delay:.14s}.d3{animation-delay:.22s}.d4{animation-delay:.31s}.d5{animation-delay:.4s}
+@media(max-width:1100px){.mgrid{grid-template-columns:repeat(2,1fr)}.qa-row{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.hero{padding:68px 22px 38px}.hero-stats{display:none}.hero-title{font-size:38px}.content{padding:24px 22px 52px}.mgrid,.qa-row{grid-template-columns:1fr}.nav{padding:0 16px}.nav-sep,.nav-links{display:none}}
 </style>
 </head>
 <body>
@@ -142,9 +143,9 @@ body{font-family:'Segoe UI',Calibri,sans-serif;background:#F0EDE8;color:#1E1E1E;
 <div class="nav-sep"></div>
 <div class="nav-links">
 <a class="nav-link active" href="#">Finance</a>
-<a class="nav-link" href="https://tlinfra.sharepoint.com/sites/Albania" target="_blank">HR</a>
-<a class="nav-link" href="https://tlinfra.sharepoint.com/sites/Albania" target="_blank">Operations</a>
-<a class="nav-link" href="https://tlinfra.sharepoint.com/sites/Albania" target="_blank">Procurement</a>
+<a class="nav-link" href="https://tlinfra.sharepoint.com/sites/Albania/SitePages/Home.aspx" target="_blank">HR</a>
+<a class="nav-link" href="https://tlinfra.sharepoint.com/sites/Albania/SitePages/Home.aspx" target="_blank">Operations</a>
+<a class="nav-link" href="https://tlinfra.sharepoint.com/sites/Albania/SitePages/Home.aspx" target="_blank">Procurement</a>
 </div></div>
 <div class="nav-right">
 <a class="nav-sp" href="https://tlinfra.sharepoint.com/sites/Albania" target="_blank"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>SharePoint<svg viewBox="0 0 12 12"><path d="M3 9L9 3M9 3H5M9 3v4"/></svg></a>
@@ -155,105 +156,110 @@ body{font-family:'Segoe UI',Calibri,sans-serif;background:#F0EDE8;color:#1E1E1E;
 <div class="hero-stripe"></div><div class="hero-glow"></div><div class="hero-grid"></div>
 <div class="hero-inner">
 <div class="hero-left">
-<div class="hero-eyebrow appear"><div class="e-dot"></div><span class="e-path">AL – Albania › <span>Finance Workspace</span></span></div>
-<h1 class="hero-title appear d1">Finance<br><span class="stroke">Workspace</span></h1>
-<p class="hero-desc appear d2">Central hub for finance operations — modules, approvals, reporting, and budget management for Telelink Infra Albania.</p>
-<div class="hero-pills appear d3"><div class="hpill hp-o"><div class="hpill-dot"></div>6 active modules</div><div class="hpill hp-y"><div class="hpill-dot"></div>3 pending approvals</div><div class="hpill hp-g"><div class="hpill-dot"></div>Updated today</div></div>
+<div class="hero-eyebrow ap"><div class="e-dot"></div><span class="e-path">AL – Albania › <span>Finance Workspace</span></span></div>
+<h1 class="hero-title ap d1">Finance<br><span class="solid-orange">Workspace</span></h1>
+<p class="hero-desc ap d2">Central hub for finance operations — modules, approvals, reporting, and budget management for Telelink Infra Albania.</p>
+<div class="hero-pills ap d3"><div class="hpill hp-o"><div class="hpd"></div>6 active modules</div><div class="hpill hp-y"><div class="hpd"></div>3 pending approvals</div><div class="hpill hp-g"><div class="hpd"></div>Updated today</div></div>
 </div>
-<div class="hero-stats appear d2"><div class="hst"><div class="hst-val">6</div><div class="hst-lbl">Active Modules</div></div><div class="hst"><div class="hst-val acc">3</div><div class="hst-lbl">Pending Approvals</div></div></div>
+<div class="hero-stats ap d2"><div class="hstat"><div class="hstat-v">6</div><div class="hstat-l">Active Modules</div></div><div class="hstat"><div class="hstat-v acc">3</div><div class="hstat-l">Pending Approvals</div></div></div>
 </div></div>
 
 <div class="content">
-<div class="sec-head appear d3"><div class="sec-lbl">Quick Access</div><div class="sec-rule"></div></div>
-<div class="qa-row appear d4">
-<a class="qa-card" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Approvals-Centre.aspx','Approvals Centre')"><div class="qa-ico a"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><div><div class="qa-ttl">Pending Approvals</div><div class="qa-sub">3 awaiting action</div></div></a>
-<a class="qa-card" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Reporting-&-Analytics.aspx','Reporting')"><div class="qa-ico b"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div><div class="qa-ttl">Q1 2026 Report</div><div class="qa-sub">Latest available</div></div></a>
-<a class="qa-card" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/ExpenseClaims/NewForm.aspx','New Expense Claim')"><div class="qa-ico g"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div><div><div class="qa-ttl">New Expense Claim</div><div class="qa-sub">Submit reimbursement</div></div></a>
-<a class="qa-card" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/ChartOfAccounts/AllItems.aspx','Chart of Accounts')"><div class="qa-ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><div><div class="qa-ttl">Master Data</div><div class="qa-sub">Chart of accounts</div></div></a>
+<div class="sh ap d3"><div class="sl">Quick Access</div><div class="sr"></div></div>
+<div class="qa-row ap d4">
+<a class="qcard" href="https://tlinfra.sharepoint.com/sites/Albania/SitePages/Approvals-Centre.aspx" target="_blank"><div class="qico qico-a"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><div><div class="qt">Pending Approvals</div><div class="qs">3 awaiting action</div></div></a>
+<a class="qcard" href="https://tlinfra.sharepoint.com/sites/Albania/SitePages/Reporting-&-Analytics.aspx" target="_blank"><div class="qico qico-b"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div><div class="qt">Q1 2026 Report</div><div class="qs">Latest available</div></div></a>
+<a class="qcard" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/ExpenseClaims/NewForm.aspx" target="_blank"><div class="qico qico-g"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div><div><div class="qt">New Expense Claim</div><div class="qs">Submit reimbursement</div></div></a>
+<a class="qcard" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/ChartOfAccounts/AllItems.aspx" target="_blank"><div class="qico qico-o"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><div><div class="qt">Master Data</div><div class="qs">Chart of accounts</div></div></a>
 </div>
 
-<div class="sec-head appear d4"><div class="sec-lbl">Finance Modules</div><div class="sec-rule"></div><div class="sec-ct">6 modules</div></div>
-<div class="modules-grid appear d5">
+<div class="sh ap d4"><div class="sl">Finance Modules</div><div class="sr"></div><div class="sc">6 modules</div></div>
+<div class="mgrid ap d5">
 
-<div class="mcard"><div class="mcard-bar"></div>
-<div class="mcard-top"><div class="mcard-ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><span class="mbadge mb-act">Active</span></div>
+<div class="mcard" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Master-Data.aspx','Master Data')">
+<div class="mcard-bar"></div>
+<div class="mcard-top"><div class="mico mico-o"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><span class="mbadge mb-ok">Active</span></div>
 <div class="mcard-title">Master Data</div>
 <div class="mcard-desc">Chart of accounts, cost centres, currencies, supplier and client master records.</div>
-<div class="mcard-links">
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/ChartOfAccounts/AllItems.aspx','Chart of Accounts')"><div class="mlink-ico o"><svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></div><span class="mlink-label">Chart of Accounts</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/CostCentres/AllItems.aspx','Cost Centres')"><div class="mlink-ico o"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><span class="mlink-label">Cost Centres</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/Suppliers/AllItems.aspx','Supplier Register')"><div class="mlink-ico o"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><span class="mlink-label">Supplier Register</span><span class="mlink-arrow">›</span></a>
+<div class="mlinks">
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/ChartOfAccounts/AllItems.aspx" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-o"><svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></div><span class="ml-lbl">Chart of Accounts</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/CostCentres/AllItems.aspx" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-o"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><span class="ml-lbl">Cost Centres</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/Suppliers/AllItems.aspx" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-o"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><span class="ml-lbl">Supplier Register</span><span class="ml-arr">›</span></a>
 </div>
-<div class="mcard-footer"><span class="mcard-meta">Updated 2d ago</span><span class="mcard-open" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Master-Data.aspx','Master Data')">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+<div class="mcard-foot"><span class="mcard-meta">Updated 2d ago</span><span class="mcard-cta">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
 
-<div class="mcard"><div class="mcard-bar"></div>
-<div class="mcard-top"><div class="mcard-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><span class="mbadge mb-act">Active</span></div>
+<div class="mcard" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Finance-Operations.aspx','Finance Operations')">
+<div class="mcard-bar"></div>
+<div class="mcard-top"><div class="mico mico-o"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><span class="mbadge mb-ok">Active</span></div>
 <div class="mcard-title">Finance Operations</div>
 <div class="mcard-desc">Invoicing, payments, bank reconciliation, and day-to-day transaction tracking.</div>
-<div class="mcard-links">
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/Invoices/AllItems.aspx','Invoice Register')"><div class="mlink-ico o"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><span class="mlink-label">Invoice Register</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/Payments/AllItems.aspx','Payment Tracker')"><div class="mlink-ico o"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div><span class="mlink-label">Payment Tracker</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Finance%20Operations','Finance Documents')"><div class="mlink-ico o"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg></div><span class="mlink-label">Finance Documents</span><span class="mlink-arrow">›</span></a>
+<div class="mlinks">
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/Invoices/AllItems.aspx" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-o"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><span class="ml-lbl">Invoice Register</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/Payments/AllItems.aspx" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-o"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div><span class="ml-lbl">Payment Tracker</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FAlbania%2FShared%20Documents%2FFinance%20Operations" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-o"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg></div><span class="ml-lbl">Finance Documents</span><span class="ml-arr">›</span></a>
 </div>
-<div class="mcard-footer"><span class="mcard-meta">12 open transactions</span><span class="mcard-open" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Finance-Operations.aspx','Finance Operations')">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+<div class="mcard-foot"><span class="mcard-meta">12 open transactions</span><span class="mcard-cta">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
 
-<div class="mcard mc-b"><div class="mcard-bar"></div>
-<div class="mcard-top"><div class="mcard-ico"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><span class="mbadge mb-act">Active</span></div>
+<div class="mcard mc-b" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Reporting-&-Analytics.aspx','Reporting &amp; Analytics')">
+<div class="mcard-bar"></div>
+<div class="mcard-top"><div class="mico mico-b"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><span class="mbadge mb-ok">Active</span></div>
 <div class="mcard-title">Reporting &amp; Analytics</div>
 <div class="mcard-desc">P&amp;L statements, cash flow, variance analysis, and management dashboards.</div>
-<div class="mcard-links">
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Reports/P%26L','P&amp;L Reports')"><div class="mlink-ico b"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><span class="mlink-label">P&amp;L Reports</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Reports/CashFlow','Cash Flow')"><div class="mlink-ico b"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><span class="mlink-label">Cash Flow Reports</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Reports/Management','Dashboards')"><div class="mlink-ico b"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><span class="mlink-label">Management Dashboards</span><span class="mlink-arrow">›</span></a>
+<div class="mlinks">
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FAlbania%2FShared%20Documents%2FReports%2FPL" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-b"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><span class="ml-lbl">P&amp;L Reports</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FAlbania%2FShared%20Documents%2FReports%2FCashFlow" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-b"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><span class="ml-lbl">Cash Flow Reports</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FAlbania%2FShared%20Documents%2FReports%2FManagement" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-b"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><span class="ml-lbl">Management Dashboards</span><span class="ml-arr">›</span></a>
 </div>
-<div class="mcard-footer"><span class="mcard-meta">Q1 2026 available</span><span class="mcard-open" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Reporting-&-Analytics.aspx','Reporting')">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+<div class="mcard-foot"><span class="mcard-meta">Q1 2026 available</span><span class="mcard-cta">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
 
-<div class="mcard"><div class="mcard-bar"></div>
-<div class="mcard-top"><div class="mcard-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><span class="mbadge mb-act">Active</span></div>
+<div class="mcard" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Budgets-&-Forecasts.aspx','Budgets &amp; Forecasts')">
+<div class="mcard-bar"></div>
+<div class="mcard-top"><div class="mico mico-o"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><span class="mbadge mb-ok">Active</span></div>
 <div class="mcard-title">Budgets &amp; Forecasts</div>
-<div class="mcard-desc">Annual budgets, rolling quarterly forecasts, and scenario planning.</div>
-<div class="mcard-links">
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Budgets/FY2026','FY2026 Budget')"><div class="mlink-ico o"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><span class="mlink-label">FY2026 Budget</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Budgets/Forecasts','Rolling Forecasts')"><div class="mlink-ico o"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><span class="mlink-label">Rolling Forecasts</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Budgets/Variance','Variance Analysis')"><div class="mlink-ico o"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><span class="mlink-label">Variance Analysis</span><span class="mlink-arrow">›</span></a>
+<div class="mcard-desc">Annual budgets, rolling quarterly forecasts, and scenario planning with variance analysis.</div>
+<div class="mlinks">
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FAlbania%2FShared%20Documents%2FBudgets%2FFY2026" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-o"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><span class="ml-lbl">FY2026 Budget</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FAlbania%2FShared%20Documents%2FBudgets%2FForecasts" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-o"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><span class="ml-lbl">Rolling Forecasts</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FAlbania%2FShared%20Documents%2FBudgets%2FVariance" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-o"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><span class="ml-lbl">Variance Analysis</span><span class="ml-arr">›</span></a>
 </div>
-<div class="mcard-footer"><span class="mcard-meta">FY2026 in progress</span><span class="mcard-open" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Budgets-&-Forecasts.aspx','Budgets')">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+<div class="mcard-foot"><span class="mcard-meta">FY2026 in progress</span><span class="mcard-cta">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
 
-<div class="mcard mc-a"><div class="mcard-bar"></div>
-<div class="mcard-top"><div class="mcard-ico"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><span class="mbadge mb-pnd">3 Pending</span></div>
+<div class="mcard mc-a" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Approvals-Centre.aspx','Approvals Centre')">
+<div class="mcard-bar"></div>
+<div class="mcard-top"><div class="mico mico-a"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><span class="mbadge mb-pnd">3 Pending</span></div>
 <div class="mcard-title">Approvals Centre</div>
-<div class="mcard-desc">Purchase order approvals, invoice authorisations, and finance workflows.</div>
-<div class="mcard-links">
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/PurchaseOrders/AllItems.aspx','Purchase Orders')"><div class="mlink-ico a"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></div><span class="mlink-label">Purchase Orders</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/InvoiceApprovals/AllItems.aspx','Invoice Approvals')"><div class="mlink-ico a"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg></div><span class="mlink-label">Invoice Approvals</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/FinanceApprovals/AllItems.aspx?FilterField1=Status&FilterValue1=Pending','3 Pending Items')"><div class="mlink-ico a"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><span class="mlink-label">3 Pending Items</span><span class="mlink-arrow">›</span></a>
+<div class="mcard-desc">Purchase order approvals, invoice authorisations, and finance workflow management.</div>
+<div class="mlinks">
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/PurchaseOrders/AllItems.aspx" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-a"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></div><span class="ml-lbl">Purchase Orders</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/InvoiceApprovals/AllItems.aspx" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-a"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg></div><span class="ml-lbl">Invoice Approvals</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/FinanceApprovals/AllItems.aspx?FilterField1=Status&FilterValue1=Pending" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-a"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><span class="ml-lbl">3 Pending Items</span><span class="ml-arr">›</span></a>
 </div>
-<div class="mcard-footer"><span class="mcard-meta">Awaiting action</span><span class="mcard-open" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Approvals-Centre.aspx','Approvals Centre')">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+<div class="mcard-foot"><span class="mcard-meta">Awaiting action</span><span class="mcard-cta">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
 
-<div class="mcard mc-g"><div class="mcard-bar"></div>
-<div class="mcard-top"><div class="mcard-ico"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div><span class="mbadge mb-act">Active</span></div>
+<div class="mcard mc-g" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Employee-Expense-Management.aspx','Employee Expenses')">
+<div class="mcard-bar"></div>
+<div class="mcard-top"><div class="mico mico-g"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div><span class="mbadge mb-ok">Active</span></div>
 <div class="mcard-title">Employee Expenses</div>
-<div class="mcard-desc">Expense claims, per diem management, and reimbursement processing.</div>
-<div class="mcard-links">
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/ExpenseClaims/NewForm.aspx','Submit Expense')"><div class="mlink-ico g"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div><span class="mlink-label">Submit New Claim</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/ExpenseClaims/AllItems.aspx','All Claims')"><div class="mlink-ico g"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/></svg></div><span class="mlink-label">All Expense Claims</span><span class="mlink-arrow">›</span></a>
-<a class="mlink" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/Lists/PerDiem/AllItems.aspx','Per Diem Rates')"><div class="mlink-ico g"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><span class="mlink-label">Per Diem Rates</span><span class="mlink-arrow">›</span></a>
+<div class="mcard-desc">Expense claims, per diem management, and reimbursement processing workflows.</div>
+<div class="mlinks">
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/ExpenseClaims/NewForm.aspx" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-g"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div><span class="ml-lbl">Submit New Claim</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/ExpenseClaims/AllItems.aspx" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-g"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/></svg></div><span class="ml-lbl">All Expense Claims</span><span class="ml-arr">›</span></a>
+<a class="mlink" href="https://tlinfra.sharepoint.com/sites/Albania/Lists/PerDiem/AllItems.aspx" target="_blank" onclick="event.stopPropagation()"><div class="mlico mlico-g"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><span class="ml-lbl">Per Diem Rates</span><span class="ml-arr">›</span></a>
 </div>
-<div class="mcard-footer"><span class="mcard-meta">Last claim 5d ago</span><span class="mcard-open" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Employee-Expense-Management.aspx','Expenses')">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+<div class="mcard-foot"><span class="mcard-meta">Last claim 5d ago</span><span class="mcard-cta">Open module <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
 
 </div></div>
 
-<div class="modal-overlay" id="ov" onclick="cMO(event)"><div class="modal-wrap"><div class="modal-box">
-<div class="modal-bar"><div class="modal-bar-l"><div class="modal-sp-ico"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg></div><span class="modal-ttl" id="ml">SharePoint</span></div>
-<div class="modal-bar-r"><a class="modal-ext" id="me" href="#" target="_blank"><svg viewBox="0 0 12 12"><path d="M3 9L9 3M9 3H5M9 3v4"/></svg>Open in SharePoint</a><button class="modal-cls" onclick="cM()">✕</button></div></div>
-<div class="modal-loading" id="mld"><div class="modal-spinner"></div><span>Loading SharePoint content…</span></div>
-<iframe class="modal-iframe" id="mif" onload="iR()"></iframe>
+<div class="moverlay" id="ov" onclick="cMO(event)"><div class="mwrap"><div class="mbox">
+<div class="mbar"><div class="mbar-l"><div class="mbar-ico"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg></div><span class="mbar-ttl" id="ml">SharePoint</span></div>
+<div class="mbar-r"><a class="mbar-ext" id="me" href="#" target="_blank"><svg viewBox="0 0 12 12"><path d="M3 9L9 3M9 3H5M9 3v4"/></svg>Open in SharePoint</a><button class="mbar-cls" onclick="cM()">✕</button></div></div>
+<div class="mld" id="mld"><div class="mspn"></div><span>Loading SharePoint content…</span></div>
+<iframe class="mifr" id="mif" onload="iR()"></iframe>
 </div></div></div>
-
 <script>
 function oM(u,l){const o=document.getElementById('ov'),i=document.getElementById('mif'),d=document.getElementById('mld');document.getElementById('ml').textContent=l;document.getElementById('me').href=u;i.style.display='none';d.style.display='flex';i.src=u;o.classList.add('open');document.body.style.overflow='hidden'}
 function iR(){document.getElementById('mld').style.display='none';document.getElementById('mif').style.display='block'}
-function cM(){document.getElementById('ov').classList.remove('open');document.body.style.overflow='';setTimeout(()=>{document.getElementById('mif').src=''},320)}
+function cM(){document.getElementById('ov').classList.remove('open');document.body.style.overflow='';setTimeout(()=>{document.getElementById('mif').src=''},300)}
 function cMO(e){if(e.target===document.getElementById('ov'))cM()}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')cM()});
 </script>
