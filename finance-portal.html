@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Finance — Telelink Infra Albania</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+:root{--red:#DB3501;--orange:#FF5300;--amber:#FF8C42;--yellow:#FDCD1F;--bg:#0C0C0C;--surface:#141414;--border:rgba(255,255,255,0.07);--text:#F0EDE8;--text-muted:rgba(240,237,232,0.45);--text-faint:rgba(240,237,232,0.22)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-size:200px}
+.amb{position:fixed;pointer-events:none;z-index:0;border-radius:50%;filter:blur(120px);opacity:0.08}
+.amb1{width:800px;height:800px;background:var(--orange);top:-300px;right:-200px;animation:d1 18s ease-in-out infinite alternate}
+.amb2{width:500px;height:500px;background:var(--red);bottom:-100px;left:-100px;animation:d2 14s ease-in-out infinite alternate}
+@keyframes d1{to{transform:translate(60px,80px) scale(1.1)}}
+@keyframes d2{to{transform:translate(-40px,-60px) scale(0.9)}}
+nav{position:fixed;top:0;left:0;right:0;z-index:900;height:58px;display:flex;align-items:center;padding:0 32px;background:rgba(12,12,12,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.ni{width:100%;display:flex;align-items:center;justify-content:space-between}
+.nb{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nm{width:32px;height:32px;background:linear-gradient(135deg,var(--red),var(--orange));border-radius:8px;display:grid;place-items:center;font-family:'Syne',sans-serif;font-size:13px;font-weight:800;color:#fff}
+.nn{font-family:'Syne',sans-serif;font-size:14px;font-weight:600;color:var(--text)}
+.nn em{color:var(--orange);font-style:normal}
+.nd{width:1px;height:20px;background:var(--border);margin:0 20px}
+.np{display:flex;align-items:center;gap:2px;background:#141414;border:1px solid var(--border);border-radius:10px;padding:3px}
+.npi{font-size:12.5px;font-weight:500;color:var(--text-muted);padding:5px 14px;border-radius:7px;text-decoration:none;transition:all .2s}
+.npi:hover{color:var(--text)}
+.npi.active{background:rgba(255,83,0,0.15);color:var(--amber);border:1px solid rgba(255,83,0,0.25)}
+.na{display:flex;align-items:center;gap:10px}
+.ns{display:flex;align-items:center;gap:6px;border:1px solid var(--border);color:var(--text-muted);font-size:12.5px;font-weight:500;font-family:'DM Sans',sans-serif;padding:7px 14px;border-radius:8px;text-decoration:none;transition:all .2s}
+.ns:hover{border-color:rgba(255,83,0,0.4);color:var(--amber)}
+.ns svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
+.nav-av{width:32px;height:32px;background:linear-gradient(135deg,#2a1a0e,#3d2010);border:1px solid rgba(255,83,0,0.2);border-radius:50%;display:grid;place-items:center;font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--amber)}
+.page{position:relative;z-index:1;padding-top:58px}
+.hero{position:relative;padding:72px 60px 64px;overflow:hidden;min-height:380px;display:flex;align-items:flex-end;border-bottom:1px solid var(--border)}
+.hbg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 75% 20%,rgba(255,83,0,0.07),transparent 60%),radial-gradient(ellipse 40% 80% at 10% 90%,rgba(219,53,1,0.05),transparent 50%)}
+.hln{position:absolute;inset:0;background-image:linear-gradient(rgba(255,83,0,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,83,0,0.03) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 100% 100% at 80% 0%,black,transparent 70%)}
+.hstr{position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--orange) 40%,var(--yellow) 80%,transparent)}
+.hc{position:relative;z-index:2;width:100%;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hl{max-width:700px}
+.hbr{display:flex;align-items:center;gap:8px;margin-bottom:22px}
+.hbd{width:5px;height:5px;border-radius:50%;background:var(--orange);animation:pd 2s ease-in-out infinite}
+@keyframes pd{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.7)}}
+.hbt{font-size:11px;font-weight:500;color:var(--text-faint);letter-spacing:2px;text-transform:uppercase}
+.hbc{font-size:11px;font-weight:600;color:var(--amber);letter-spacing:1.5px;text-transform:uppercase}
+.htit{font-family:'Syne',sans-serif;font-size:62px;font-weight:800;line-height:0.95;letter-spacing:-3px;color:var(--text);margin-bottom:20px}
+.htit2{color:transparent;-webkit-text-stroke:1.5px rgba(255,83,0,0.6);display:block}
+.hdesc{font-size:15px;font-weight:300;color:var(--text-muted);line-height:1.75;max-width:480px;margin-bottom:32px}
+.htags{display:flex;flex-wrap:wrap;gap:8px}
+.htag{display:inline-flex;align-items:center;gap:7px;padding:7px 14px 7px 10px;border-radius:100px;font-size:12px;font-weight:500;border:1px solid}
+.hdot{width:5px;height:5px;border-radius:50%}
+.ta{background:rgba(255,83,0,0.08);border-color:rgba(255,83,0,0.2);color:var(--amber)}.ta .hdot{background:var(--orange)}
+.tb{background:rgba(253,205,31,0.06);border-color:rgba(253,205,31,0.15);color:rgba(253,205,31,0.7)}.tb .hdot{background:var(--yellow)}
+.tc{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);color:var(--text-faint)}
+.hst{display:flex;flex-direction:column;gap:12px;flex-shrink:0}
+.sc{background:#141414;border:1px solid var(--border);border-radius:16px;padding:18px 24px;text-align:right;min-width:160px;position:relative;overflow:hidden;transition:border-color .3s}
+.sc::before{content:'';position:absolute;top:0;right:0;width:60px;height:60px;border-radius:50%;background:radial-gradient(circle,rgba(255,83,0,0.12),transparent 70%);transform:translate(20px,-20px)}
+.sc:hover{border-color:rgba(255,83,0,0.2)}
+.sv{font-family:'Syne',sans-serif;font-size:36px;font-weight:800;line-height:1;color:var(--text);letter-spacing:-1.5px}
+.sv.or{color:var(--amber)}
+.sl{font-size:10px;font-weight:500;color:var(--text-faint);letter-spacing:1.5px;text-transform:uppercase;margin-top:6px}
+.main{padding:44px 60px 80px}
+.sh{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.slb{font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,83,0,0.6);white-space:nowrap}
+.shr{flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
+.sm{font-size:11px;color:var(--text-faint)}
+.qg{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:52px}
+.qc{background:#141414;border:1px solid var(--border);border-radius:14px;padding:18px 20px;display:flex;align-items:center;gap:14px;cursor:pointer;text-decoration:none;color:inherit;transition:all .25s;position:relative;overflow:hidden}
+.qc:hover{border-color:rgba(255,83,0,0.3);transform:translateY(-2px);box-shadow:0 8px 32px rgba(255,83,0,0.08)}
+.qi{width:38px;height:38px;border-radius:10px;background:rgba(255,83,0,0.1);border:1px solid rgba(255,83,0,0.15);display:grid;place-items:center;flex-shrink:0}
+.qi svg{width:18px;height:18px;stroke:var(--orange);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.qi.ia{background:rgba(253,140,66,0.1);border-color:rgba(253,140,66,0.15)}.qi.ia svg{stroke:var(--amber)}
+.qi.ib{background:rgba(59,111,212,0.1);border-color:rgba(59,111,212,0.15)}.qi.ib svg{stroke:#7BA8F5}
+.qi.ig{background:rgba(26,122,69,0.1);border-color:rgba(26,122,69,0.15)}.qi.ig svg{stroke:#4DC888}
+.qt{font-size:13px;font-weight:500;color:var(--text);margin-bottom:2px}
+.qs{font-size:11px;color:var(--text-faint)}
+.mg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mc{background:#141414;border:1px solid var(--border);border-radius:20px;padding:28px;display:flex;flex-direction:column;cursor:pointer;text-decoration:none;color:inherit;position:relative;overflow:hidden;transition:all .3s cubic-bezier(0.34,1.56,0.64,1)}
+.mc::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,83,0,0.06),transparent 60%);opacity:0;transition:opacity .3s}
+.mc::after{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--orange),transparent);opacity:0;transition:opacity .3s;border-radius:2px 0 0 2px}
+.mc:hover{border-color:rgba(255,83,0,0.25);transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,0.4)}
+.mc:hover::before,.mc:hover::after{opacity:1}
+.mc.ab::after{background:linear-gradient(180deg,#7BA8F5,transparent)}
+.mc.ag::after{background:linear-gradient(180deg,#4DC888,transparent)}
+.mc.aa::after{background:linear-gradient(180deg,var(--amber),transparent)}
+.mct{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:22px}
+.mci{width:50px;height:50px;border-radius:14px;background:rgba(255,83,0,0.08);border:1px solid rgba(255,83,0,0.12);display:grid;place-items:center;flex-shrink:0;transition:all .3s}
+.mc:hover .mci{background:rgba(255,83,0,0.14);border-color:rgba(255,83,0,0.25)}
+.mci svg{width:24px;height:24px;stroke:var(--orange);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.mci.ib{background:rgba(123,168,245,0.08);border-color:rgba(123,168,245,0.12)}.mci.ib svg{stroke:#7BA8F5}
+.mc:hover .mci.ib{background:rgba(123,168,245,0.14);border-color:rgba(123,168,245,0.25)}
+.mci.ig{background:rgba(77,200,136,0.08);border-color:rgba(77,200,136,0.12)}.mci.ig svg{stroke:#4DC888}
+.mc:hover .mci.ig{background:rgba(77,200,136,0.14);border-color:rgba(77,200,136,0.25)}
+.mci.ia{background:rgba(255,140,66,0.08);border-color:rgba(255,140,66,0.12)}.mci.ia svg{stroke:var(--amber)}
+.mc:hover .mci.ia{background:rgba(255,140,66,0.14);border-color:rgba(255,140,66,0.25)}
+.mb{font-family:'Syne',sans-serif;font-size:9px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:5px 10px;border-radius:100px;border:1px solid;flex-shrink:0}
+.mba{background:rgba(77,200,136,0.1);border-color:rgba(77,200,136,0.2);color:#4DC888}
+.mbp{background:rgba(255,140,66,0.1);border-color:rgba(255,140,66,0.2);color:var(--amber)}
+.mti{font-family:'Syne',sans-serif;font-size:17px;font-weight:700;color:var(--text);margin-bottom:8px;letter-spacing:-0.4px}
+.mde{font-size:13px;font-weight:300;color:var(--text-muted);line-height:1.65;flex:1;margin-bottom:22px}
+.mf{border-top:1px solid var(--border);padding-top:16px;display:flex;justify-content:space-between;align-items:center}
+.mm{font-size:11px;color:var(--text-faint)}
+.mk{display:flex;align-items:center;gap:4px;font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.5px;color:var(--orange);transition:gap .2s}
+.mk.kb{color:#7BA8F5}.mk.kg{color:#4DC888}.mk.ka{color:var(--amber)}
+.mc:hover .mk{gap:8px}
+.mk svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round}
+.bd{position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.75);backdrop-filter:blur(8px);opacity:0;pointer-events:none;transition:opacity .3s}
+.bd.open{opacity:1;pointer-events:all}
+.mo{position:fixed;inset:0;z-index:1001;display:flex;align-items:center;justify-content:center;pointer-events:none;padding:24px}
+.mb2{width:100%;max-width:1200px;height:88vh;background:#141414;border:1px solid rgba(255,83,0,0.15);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;pointer-events:all;box-shadow:0 60px 160px rgba(0,0,0,0.6);transform:scale(0.95) translateY(20px);transition:transform .35s cubic-bezier(0.34,1.56,0.64,1)}
+.bd.open .mb2{transform:scale(1) translateY(0)}
+.mh{background:#0C0C0C;padding:0 24px;height:52px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);flex-shrink:0}
+.mtg{display:flex;align-items:center;gap:10px}
+.mi{width:26px;height:26px;background:rgba(255,83,0,0.1);border:1px solid rgba(255,83,0,0.2);border-radius:7px;display:grid;place-items:center}
+.mi svg{width:14px;height:14px;stroke:var(--orange);fill:none;stroke-width:2;stroke-linecap:round}
+.mtt{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;color:var(--text);letter-spacing:-0.2px}
+.mco{display:flex;align-items:center;gap:8px}
+.meb{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.05);border:1px solid var(--border);color:var(--text-muted);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;padding:6px 13px;border-radius:8px;cursor:pointer;text-decoration:none;transition:all .2s}
+.meb:hover{border-color:rgba(255,83,0,0.3);color:var(--amber);background:rgba(255,83,0,0.06)}
+.meb svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round}
+.mcl{width:30px;height:30px;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:8px;display:grid;place-items:center;cursor:pointer;color:var(--text-muted);font-size:16px;transition:all .2s;flex-shrink:0}
+.mcl:hover{background:rgba(219,53,1,0.15);border-color:rgba(219,53,1,0.3);color:var(--text)}
+.mld{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:var(--text-faint);font-size:13px}
+.msp{width:32px;height:32px;border:2px solid var(--border);border-top-color:var(--orange);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.mif{flex:1;border:none;width:100%;display:none}
+.fi{opacity:0;transform:translateY(16px);animation:fu .6s ease forwards}
+@keyframes fu{to{opacity:1;transform:translateY(0)}}
+.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}.d5{animation-delay:.5s}
+@media(max-width:1100px){.mg{grid-template-columns:repeat(2,1fr)}.qg{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.hero{padding:80px 24px 48px}.hst{display:none}.htit{font-size:44px}.main{padding:32px 24px 60px}.mg,.qg{grid-template-columns:1fr}nav{padding:0 20px}.nd,.np{display:none}}
+</style>
+</head>
+<body>
+<div class="amb amb1"></div>
+<div class="amb amb2"></div>
+<nav><div class="ni">
+<div style="display:flex;align-items:center">
+<a class="nb" href="https://tlinfra.sharepoint.com/sites/Albania" target="_blank"><div class="nm">TI</div><span class="nn">Telelink Infra <em>Albania</em></span></a>
+<div class="nd"></div>
+<div class="np"><a class="npi active" href="#">Finance</a><a class="npi" href="https://tlinfra.sharepoint.com/sites/Albania" target="_blank">HR</a><a class="npi" href="https://tlinfra.sharepoint.com/sites/Albania" target="_blank">Operations</a><a class="npi" href="https://tlinfra.sharepoint.com/sites/Albania" target="_blank">Procurement</a></div>
+</div>
+<div class="na"><a class="ns" href="https://tlinfra.sharepoint.com/sites/Albania" target="_blank"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>SharePoint<svg viewBox="0 0 12 12"><path d="M3 9L9 3M9 3H5M9 3v4"/></svg></a><div class="nav-av">NK</div></div>
+</div></nav>
+<div class="page">
+<div class="hero"><div class="hbg"></div><div class="hln"></div><div class="hstr"></div>
+<div class="hc">
+<div class="hl">
+<div class="hbr fi"><div class="hbd"></div><span class="hbt">AL – Albania</span><span style="color:var(--text-faint)">›</span><span class="hbc">Finance Workspace</span></div>
+<h1 class="htit fi d1">Finance<br><span class="htit2">Workspace</span></h1>
+<p class="hdesc fi d2">Central hub for all finance operations — modules, approvals, reporting, and budget management for Telelink Infra Albania.</p>
+<div class="htags fi d3"><div class="htag ta"><div class="hdot"></div>6 active modules</div><div class="htag tb"><div class="hdot"></div>3 pending approvals</div><div class="htag tc">Updated today</div></div>
+</div>
+<div class="hst fi d2"><div class="sc"><div class="sv">6</div><div class="sl">Active Modules</div></div><div class="sc"><div class="sv or">3</div><div class="sl">Pending Approvals</div></div></div>
+</div>
+</div>
+<div class="main">
+<div class="sh fi d3"><div class="slb">Quick Access</div><div class="shr"></div></div>
+<div class="qg fi d4">
+<a class="qc" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Approvals-Centre.aspx','Approvals Centre')"><div class="qi ia"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><div><div class="qt">Pending Approvals</div><div class="qs">3 awaiting action</div></div></a>
+<a class="qc" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Reporting-&-Analytics.aspx','Reporting')"><div class="qi ib"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div><div class="qt">Q1 2026 Report</div><div class="qs">Latest available</div></div></a>
+<a class="qc" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Employee-Expense-Management.aspx','Expenses')"><div class="qi ig"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div><div><div class="qt">New Expense Claim</div><div class="qs">Submit reimbursement</div></div></a>
+<a class="qc" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Master-Data.aspx','Master Data')"><div class="qi"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><div><div class="qt">Master Data</div><div class="qs">Chart of accounts</div></div></a>
+</div>
+<div class="sh fi d4"><div class="slb">Finance Modules</div><div class="shr"></div><div class="sm">6 modules</div></div>
+<div class="mg fi d5">
+<div class="mc" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Master-Data.aspx','Master Data')"><div class="mct"><div class="mci"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><span class="mb mba">Active</span></div><div class="mti">Master Data</div><div class="mde">Chart of accounts, cost centres, currencies, and supplier &amp; client master records.</div><div class="mf"><span class="mm">Updated 2d ago</span><span class="mk">Open<svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+<div class="mc" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Finance-Operations.aspx','Finance Operations')"><div class="mct"><div class="mci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><span class="mb mba">Active</span></div><div class="mti">Finance Operations</div><div class="mde">Invoicing, payments, bank reconciliation, and day-to-day transaction management.</div><div class="mf"><span class="mm">12 open transactions</span><span class="mk">Open<svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+<div class="mc ab" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Reporting-&-Analytics.aspx','Reporting')"><div class="mct"><div class="mci ib"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><span class="mb mba">Active</span></div><div class="mti">Reporting &amp; Analytics</div><div class="mde">P&amp;L, cash flow, variance analysis, and management dashboards.</div><div class="mf"><span class="mm">Q1 2026 available</span><span class="mk kb">Open<svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+<div class="mc" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Budgets-&-Forecasts.aspx','Budgets')"><div class="mct"><div class="mci"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><span class="mb mba">Active</span></div><div class="mti">Budgets &amp; Forecasts</div><div class="mde">Annual budgets, rolling forecasts, and scenario planning with variance analysis.</div><div class="mf"><span class="mm">FY2026 in progress</span><span class="mk">Open<svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+<div class="mc aa" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Approvals-Centre.aspx','Approvals Centre')"><div class="mct"><div class="mci ia"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><span class="mb mbp">3 Pending</span></div><div class="mti">Approvals Centre</div><div class="mde">Purchase order approvals, invoice authorisations, and finance workflow management.</div><div class="mf"><span class="mm">Awaiting action</span><span class="mk ka">Open<svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+<div class="mc ag" onclick="oM('https://tlinfra.sharepoint.com/sites/Albania/SitePages/Employee-Expense-Management.aspx','Expenses')"><div class="mct"><div class="mci ig"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div><span class="mb mba">Active</span></div><div class="mti">Employee Expenses</div><div class="mde">Expense claims, per diem management, and reimbursement processing workflows.</div><div class="mf"><span class="mm">Last claim 5d ago</span><span class="mk kg">Open<svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"/></svg></span></div></div>
+</div>
+</div>
+</div>
+<div class="bd" id="bd" onclick="cMO(event)"><div class="mo"><div class="mb2" id="mb2"><div class="mh"><div class="mtg"><div class="mi"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg></div><span class="mtt" id="ml">SharePoint</span></div><div class="mco"><a class="meb" id="me" href="#" target="_blank"><svg viewBox="0 0 12 12"><path d="M3 9L9 3M9 3H5M9 3v4"/></svg>Open in SharePoint</a><button class="mcl" onclick="cM()">✕</button></div></div><div class="mld" id="mld"><div class="msp"></div><span>Loading…</span></div><iframe class="mif" id="mif" onload="iL()"></iframe></div></div></div>
+<script>
+function oM(u,l){const b=document.getElementById('bd'),i=document.getElementById('mif'),d=document.getElementById('mld');document.getElementById('ml').textContent=l;document.getElementById('me').href=u;i.style.display='none';d.style.display='flex';i.src=u;b.classList.add('open');document.body.style.overflow='hidden'}
+function iL(){document.getElementById('mld').style.display='none';document.getElementById('mif').style.display='block'}
+function cM(){document.getElementById('bd').classList.remove('open');document.body.style.overflow='';setTimeout(()=>{document.getElementById('mif').src=''},350)}
+function cMO(e){if(e.target===document.getElementById('bd'))cM()}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')cM()});
+</script>
+</body>
+</html>
